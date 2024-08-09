@@ -1,0 +1,5 @@
+credentials.json
+.env
+db.sqlite3
+core/__pycache__
+google_sheets_api/__pycache__
