@@ -5,6 +5,7 @@ from django.conf import settings
 from django.http import JsonResponse
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request
+from google.oauth2 import service_account
 
 
 async def get_google_sheet_service():
@@ -90,7 +91,6 @@ async def write_sheet(request):
 
 async def read_sheet(request):
     try:
-        from google.oauth2 import service_account
 
         spreadsheet_id = settings.SPREADSHEET_ID
         print(spreadsheet_id, "SPREADSHEET_ID")
